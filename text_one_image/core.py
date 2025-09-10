@@ -11,8 +11,8 @@ class TextOnImage:
         """
         self.font_dir = font_dir or os.path.join(os.path.dirname(__file__), "fonts")
         self.default_fonts = {
-            "fa": os.path.join(self.font_dir, "Vazir-Regular.ttf"),
-            "en": os.path.join(self.font_dir, "Roboto-Regular.ttf"),
+            "fa": os.path.join(self.font_dir, "vazir", "Vazir.ttf"),
+            "en": os.path.join(self.font_dir, "roboto", "Roboto-Regular.ttf"),
         }
 
     def _prepare_text(self, text: str, lang: str):
