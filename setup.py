@@ -9,6 +9,9 @@ setup(
     url="https://github.com/diaco-dev/text_on_image",
     packages=find_packages(),
     include_package_data=True,
+    package_data={
+        "text_on_image": ["fonts/vazir/*.ttf", "fonts/roboto/*.ttf"],
+    },
     install_requires=[
         "Pillow",
         "arabic-reshaper",
